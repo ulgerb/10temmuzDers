@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ödev 3</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+
+      .container{
+         padding: 10px;
+         margin: 20px auto;
+         width: 500px;
+         height: 700px;
+         border: 4px solid black;
+         display: flex;
+         flex-direction: column;
+         row-gap: 10px;
+      }
+      .img1{
+         width: 100%;
+         height: 18%;
+         border: 4px solid black;
+      }
+
+      .hid1{
+         width: 100%;
+         height: 56%;
+         display: flex;
+         gap: 10px; /* flex özelliği, x düzleminde içerdekilere aralık verir */
+         
+      }
+      .hid2{
+         width: 60%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+      .text1{
+         width: 100%;
+         height: 30%;
+         border: 4px solid black;
+      }
+      .img2{
+         width: 100%;
+         height: 70%;
+         border: 4px solid black;
+      }
+
+      .hid3{
+         width: 40%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+      .img3{
+         width: 100%;
+         height: 80%;
+         border: 4px solid black;
+      }
+      .text2{
+         width: 100%;
+         height: 20%;
+         border: 4px solid black;
+      }
+
+      .text3{
+         width: 100%;
+         height: 26%;
+         border: 4px solid black;
+      }
+
+      .text1,.text2,.text3{
+         padding: 5px;
+         background-color: lightgreen;
+         border-radius: 10px;
+      }
+      .img1,.img2,.img3{
+         background-color: skyblue;
+         border-radius: 10px;
+      }
+      .img1 img, .img2 img, .img3 img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }  
+
+      
+   </style>
+</head>
+<body>
+   <header>
+      <nav style="padding: 20px 200px; font-size: 20px; background-color: lightcoral;">
+         <a href="odev1.html">Ödev 1</a>
+         <a href="odev2.html">Ödev 2</a>
+         <a href="odev3.html">Ödev 3</a>
+      </nav>
+   </header>
+
+   <main>
+      <div class="container">
+         <div class="img1"><img src="img/x1080.jfif" alt=""></div>
+         <div class="hid1">
+            <div class="hid2">
+               <div class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat pariatur repellendus eos ex reiciendis excepturi alias quod quisquam neque?</div>
+               <div class="img2"><img src="img/ww.jfif" alt=""></div>
+            </div>
+            <div class="hid3">
+               <div class="img3"><img src="img/wwtc.jpg" alt=""></div>
+               <div class="text2">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            </div>
+         </div>
+         <div class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde expedita odit magni ipsam atque iste quo minima explicabo id? Enim facilis fugiat, nihil quisquam quod libero ipsum. Culpa, magni! Quos obcaecati sunt nesciunt totam omnis voluptatum velit ab quam beatae voluptas, nemo itaque consequatur, magnam facilis cupiditate aliquam perspiciatis.</div>
+      </div>
+   </main>
+</body>
+</html>

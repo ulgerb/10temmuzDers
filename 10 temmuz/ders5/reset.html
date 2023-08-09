@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reset</title>
+   <style>
+      /* HTML reset 1 */
+      *{ /* Tüm Etiketleri Seçer */
+         box-sizing: border-box; /* padding ve borderın width değerleri içinde kalmasını sağlar */
+         padding: 0;
+         margin: 0;
+      }
+      /* HTML reset 2 */
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      body,html{
+         margin: 0;
+      }
+      /* HTML Ek reset */
+      a{
+         text-decoration: none;
+      }
+      ul{
+         list-style-type: none;
+      }
+
+      
+      .box1{
+         width: 100%;
+         height: 300px;
+         background: lightgreen;
+      }
+      .box2{
+         padding: 30px;
+         border: 4px solid black;
+         margin: 40px;
+         width: 200px;
+         height: 200px;
+         background: red;
+      }
+
+      .kutu1{
+         width: 200px;
+         height: 200px;
+         background-color: blue;
+         border: 4px solid black;
+      }
+      .kut1{
+         width: 50px;
+         height: 50px;
+         background: orange;
+         border: 4px solid black;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="kutu1">
+      <div class="kut1"></div>
+   </div>
+   
+   <div style="margin-left: 100px;">
+      <a href="#">Linke tıkla</a>
+   
+      <ul>
+         <li>Elma suyu 50tl</li>
+         <li>Elma suyu 50tl</li>
+         <li>Elma suyu 50tl</li>
+         <li>Elma suyu 50tl</li>
+         <li>Elma suyu 50tl</li>
+      </ul>
+   </div>
+   
+   <div class="box1"></div>
+   <h4>Başlık</h4>
+   <div class="box2"></div>
+   
+   
+</body>
+</html>

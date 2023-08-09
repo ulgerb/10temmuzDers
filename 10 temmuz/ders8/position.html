@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Position</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      header{
+         width: 100%;
+         min-height: 80px;
+         border: 4px solid black;
+         background-color: lightsalmon;
+         position: sticky;
+         top: 0;
+         z-index: 2000; /* z-indexi yüksek verilen yukarda kalır */
+      }
+      header nav{
+         display: flex;
+         align-items: center;
+      }
+      header nav a{
+         font-size: 24px;
+         padding: 10px;
+         margin: 10px;
+      }
+
+      .container{
+         padding: 10px;
+      }
+      .box{
+         width: 300px;
+         height: 300px;
+         border: 4px solid black;
+      }
+      .box1{
+         /* relative yerini bırakmaz 
+         position özellikleri bulunduğu konumdan başlar */
+         background-color: #a43232;
+         position: relative;
+         right: 100px;
+      }
+      .box2{
+         /* absolute yerini terkeder
+         position özellikleri pencereye göre konumlandırılır */
+         background-color: #1f9a4c;
+         position: absolute;
+         right: 100px;
+      }
+      .box3{
+         background-color: #cbbef5;
+         position: static; /* default(ilk tanımlı hali) özelliği */
+         top: 100px;
+      }
+      .box4{
+         /* sticky kapladığı yeri tutar
+         özelliği kullanabilmek için top bottom left right verilmeli
+         position değerinden itibaren takip eder */
+         background-color: #ea75c9;
+         position: sticky;
+         top: 200px;
+      }
+      .box5{
+         /* fixed kapladığı yeri terkeder
+         top left değeri vermek gerekir
+         pencerede bizi takip eder (sürekli olarak) */
+         background-color: #8913b8;
+         position: fixed;
+         top: 100px;
+         right: 60px;
+      }
+      .box6{
+         background-color: #bec834;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="">Anasayfa</a>
+         <a href="">Hakkında</a>
+         <a href="">İletişim</a>
+      </nav>
+   </header>
+   
+   <div class="container">
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box5 box"></div>
+      <div class="box6 box"></div>
+      <div class="box6 box"></div>
+      <div class="box6 box"></div>
+      <div class="box6 box"></div>
+   </div>
+   
+</body>
+</html>

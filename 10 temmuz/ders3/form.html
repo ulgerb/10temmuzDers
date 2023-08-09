@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+</head>
+<body>
+
+   <form action="">
+      <fieldset>
+         <legend>Yükselen Burcu Hesapla</legend>
+         <label>Cinsiyet:</label>
+         <input type="radio" name="cinsiyet">
+         <label for="kadın">Kadın</label>
+         <input type="radio" name="cinsiyet">
+         <label for="erkek">Erkek</label>
+         <br><br>
+         <label for="">Burç:</label>
+         <select>
+            <option value="">Kova</option>
+            <option value="">Balık</option>
+            <option value="">Akrep</option>
+            <option value="">Yengeç</option>
+            <option value="">Boğa</option>
+            <option value="">Koç</option>
+            <option value="">Aslan</option>
+            <option value="">İkizler</option>
+         </select>
+         <br><br>
+         <label for=""><u>Doğum Tarihi ve Saati:</u></label><br>
+         <input type="date">
+         <input type="time">
+      </fieldset>
+      
+   </form>
+   
+
+   <br><br>
+   
+   <label>İsm Soyisim:</label><br>
+   <input type="text" placeholder="İsim Soyisim"><br>
+
+   <label for="">Email Adresi:</label><br>
+   <input type="email" placeholder="Email Adresi"><br>
+
+   <label for="">Şifre:</label><br>
+   <input type="password"><br>
+
+   <label for="">Doğum Tarihi:</label><br>
+   <input type="date"><br>
+
+   <label>Adres:</label><br>
+   <textarea cols="20" rows="5" placeholder="Adres Giriniz"></textarea>
+
+
+   
+   <br><hr>
+   <form>
+      <label for="fname">İsim:</label><br>
+      <input type="text" id="fname" placeholder="Adınızı Giriniz"><br>
+
+      <label for="lname">Soyisim:</label><br>
+      <input type="text" id="lname" placeholder="Soyadınızı Giriniz"><br>
+
+      <label for="tel">Tel:</label><br>
+      <input type="tel" id="tel" placeholder="+90 555 55 55"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" placeholder="example@gmail.com"><br>
+
+      <label for="username">Kullanıcı Adı:</label><br>
+      <input type="text" id="username"><br>
+
+      <label for="password1">Şifre:</label><br>
+      <input type="password" id="password1"><br>
+
+      <label for="password2">Şifre Tekrar:</label><br>
+      <input type="password" id="password2"><br>
+
+      <label for="from">Ülke Seçiniz:</label><br>
+      <select id="from">
+         <option value="2">Almanya</option>
+         <option value="3">Hindistan</option>
+         <option value="4">Çin</option>
+         <option value="5">Japonya</option>
+         <option value="1" selected>Türkiye</option>
+      </select><br>
+
+      <label for="sf">Software</label><br>
+      <input type="checkbox" id="sf"><br>
+
+      <label for="dr">Doktor</label><br>
+      <input type="checkbox" id="dr"><br>
+
+      <label for="dr2">Doktor</label><br>
+      <input type="radio" id="dr2"><br>
+
+      <input type="reset" value="Yenile">
+      <input type="submit" value="Ae3S21">
+
+      <button type="submit" value="Ae3S21">Submit</button>
+   </form>
+
+   <br><br>
+
+   <form action="">
+      <input type="checkbox" id="js">
+      <label for="js">Javascript</label>
+      
+      <input type="checkbox" checked name="myinput"  value="123" id="html">
+      <label for="html">Html</label>
+
+      <input type="checkbox" id="py">
+      <label for="py">Python</label>
+      <br><br>
+      <input type="number" placeholder="Numara" min="0" max="10" value="0">
+      
+      <hr>
+
+      <h4>Cinsiyet Seçiniz</h4>
+      <input type="radio" name="cins" id="kadın">
+      <label for="kadın">Kadın</label>
+      <input type="radio" name="cins" id="erkek">
+      <label for="erkek">Erkek</label>
+
+      <h4>Arabanızı Seçiniz</h4>
+      <input type="radio" id="mercedes" disabled name="car">
+      <label for="mercedes">Mercedes</label>
+      <input type="radio" id="bmw" name="car">
+      <label for="bmw">Bmw</label>
+      <input type="radio" id="kia" name="car">
+      <label for="kia">Kia</label>
+
+      <br><br>
+      <button type="submit">Gönder</button>
+   </form>
+
+   <br><br>
+   <form action="">
+      <fieldset>
+         <legend>Burası üst bölüm</legend>
+         <label for="fname">İsim</label>
+         <input type="text">
+         <label for="lname">Soyisim</label>
+         <input type="text">
+      </fieldset>
+   </form>
+   <br><br><br>
+   <hr>
+   <form action="">
+      <label for="#comname">Ad Soyad:</label>
+      <input type="text" id="comname"><br>
+      <label for="">Email</label>
+      <input type="email" placeholder="neosiletisim@gmail.com"><br>
+      <label for="">Yorum</label>
+      <textarea name="" id="" cols="50" rows="6">asdasd</textarea>
+   </form>
+   <hr>
+
+   <form action="">
+      <input type="text" placeholder="Kullanıcı Adı"><br>
+      Şifre: <input type="password" required><br>
+      Email: <input type="email"><br>
+
+      <button type="submit">Giriş</button>
+      
+   </form>
+   
+   
+   <hr>
+   <form action="">
+      <h2>Tüm Inputlarım</h2>
+      Kullanıcı adı: <input type="text"><br>
+      Şifre: <input type="password"><br>
+      Email: <input type="email"><br>
+      file: <input type="file"><br>
+      number: <input type="number"><br>
+      Doğum Tarihi: <input type="date"><br>
+      datetime: <input type="datetime"><br>
+      Saat: <input type="time"><br>
+      search: <input type="search"><br>
+      color: <input type="color"><br>
+      range: <input type="range"><br>
+      reset: <input type="reset"><br>
+      button: <input type="button"><br>
+      <button name="" type="button" value="deneme123123">Satı al</button>
+      tel: <input type="tel"><br>
+      <!-- selected checked disabled placeholder required min max value id type-->
+      <!-- cols rows -->
+      Uyruk: <select>
+         <option value="0" selected disabled>Ülke Seç</option>
+         <option value="1">Türkiye</option>
+         <option value="2">Almanya</option>
+         <option value="3">İngiltere</option>
+         <option value="4">Amerika</option>
+         <option value="5">Belçika</option>
+      </select><br>
+
+      <input type="checkbox">Okuyomusun?<br>
+      <input type="radio"> Cinsiyet <br>
+      <!-- select options -->
+      <button>Formu Gönder</button>
+      <hr>
+   </form>
+   <form action="">
+      <h4>Yorum</h4>
+      Ad Soyad: <input type="text"><br>
+      Yorum: <textarea name="" id="" cols="40" rows="4">asdasd</textarea>
+      <br><button type="submit">Paylaş</button>
+   </form>
+</body>
+</html>

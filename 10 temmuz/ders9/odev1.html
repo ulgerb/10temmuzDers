@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>odev 1</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      .film-img{
+         width: 100%;
+         height: 500px;
+         object-fit: cover;
+         object-position: 0 0;
+         border-radius: 40px;
+      }
+      .film-comment{
+         margin: 40px 0px;
+         text-align: center;
+      }
+      .film-play{
+         text-align: center;
+      }
+      .film-play button{
+         padding: 10px 30px;
+         background: lightcoral;
+         color: #fff;
+      }
+   </style>
+</head>
+<body>
+
+   <header>
+      <nav style="display: flex; justify-content: space-evenly; padding: 20px 200px; font-size: 20px; background-color: lightcoral;">
+         <a href="odev1.html">Ödev 1</a>
+         <a href="odev2.html">Ödev 2</a>
+         <a href="odev3.html">Ödev 3</a>
+
+         <a href="#frg">Fragman</a>
+         
+      </nav>
+   </header>
+   
+   <main style="padding: 60px 200px; background-color: lightsteelblue;">
+      <h2>The Witcher</h2>
+      <ul>
+         <li>Henry Cavill</li>
+         <li>Freya Allan</li>
+         <li>Anya Chalotra</li>
+         <li>Eamon Farren</li>
+         <li>Mimi Ndiweni</li>
+         <li>MyAnna Buring</li>
+      </ul>
+
+      <img class="film-img" src="img/wwtc.jpg" alt="">
+      
+      <p class="film-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa officiis a quos rerum amet non eligendi eos veritatis corporis blanditiis nihil sit ad delectus similique harum optio, praesentium cupiditate quam? Totam fuga itaque cumque nam! Tenetur, alias nobis eum quo nulla amet corrupti rerum debitis consequuntur! Quis, quo nisi!</p>
+      
+      <iframe id="frg" style="border-radius: 40px;" width="100%" height="550" src="https://www.youtube.com/embed/m5sA2UgMyB0"
+         title="The Witcher: 3. Sezon | 2. Kısım | Netflix" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen></iframe>
+
+      <div class="film-play">
+         <button>Filmi İzle</button>
+      </div>
+      
+   </main>
+   
+</body>
+</html>
