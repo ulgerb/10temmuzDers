@@ -9,6 +9,6 @@ Repo oluşturuyoruz 10 temmuz
       print(i)
 
 
--[] 1.madde
--[] 2.madde
--[] 3.madde
+- [] 1.madde
+- [] 2.madde
+- [] 3.madde
