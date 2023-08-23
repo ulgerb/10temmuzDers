@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exxen</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+   <style>
+      :root {
+         --color-warning: #ffc107;
+      }
+      .body{
+         overflow-x: hidden;
+      }
+
+      .bg-dark {
+         background-color: #111 !important;
+      }
+
+      .container2 {
+         margin: auto;
+         width: 1300px;
+      }
+
+      .navform input {
+         border: 0 !important;
+         box-shadow: none !important;
+         font-weight: 600;
+      }
+
+      .navform input:focus {
+         box-shadow: 0px 0px 0px 3px var(--color-warning) inset !important;
+      }
+
+      .navform input::placeholder {
+         color: #444;
+      }
+
+      .mobil-app img {
+         height: 40px;
+      }
+
+      @media screen and (max-width:1400px) {
+         .container2 {
+            margin: auto;
+            width: 1100px;
+         }
+      }
+
+      @media screen and (max-width:1200px) {
+         .container2 {
+            margin: auto;
+            width: 800px;
+         }
+      }
+
+      @media screen and (max-width:992px) {
+         .container2 {
+            margin: auto;
+            width: 700px;
+         }
+
+         .navbar-brand {
+            width: 140px;
+            overflow: hidden;
+         }
+      }
+
+      @media screen and (max-width:768px) {
+         .container2 {
+            margin: auto;
+            width: 96%;
+         }
+
+         .navbar-brand {
+            width: 110px;
+            overflow: hidden;
+         }
+
+         .navbar-brand img {
+            width: 200px;
+         }
+
+      }
+
+      @media screen and (max-width:576px) {}
+
+      /* BOOTSTRAP MEDIA */
+      @media screen and (min-width: 768px) {
+         .fs-md-1 {
+            font-size: 2rem;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <!-- NAVBAR START -->
+   <nav class="navbar bg-warning" style="min-height: 12vh;">
+      <div class="container-fluid container2 py-2 px-0">
+         <a class="navbar-brand"><img height="100%" src="https://wimage.exxen.com/img/landing/logo-web.svg" alt=""></a>
+         <div class="d-flex gap-2">
+            <a href="#" class="btn bg-black text-warning rounded-0 fw-medium px-4 d-none d-md-block">EXXENSPOR Ticari
+               Üye Ol</a>
+            <a href="#" class="btn bg-warning border-2 border-black rounded-0 fw-medium px-md-4">Üye Girişi</a>
+            <div class="nav-item dropdown d-flex align-items-center">
+               <a class="nav-link dropdown-toggle fw-medium fs-5 d-flex align-items-center justify-content-center"
+                  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="ms-2 me-1" style="height: 16px;" src="https://wimage.exxen.com/img/lang-icon.svg" alt="">
+                  TR
+               </a>
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Espanol</a></li>
+               </ul>
+            </div>
+         </div>
+         <a href="#" class="btn bg-black w-100 mt-2 text-warning rounded-0 fw-medium px-4 d-md-none">EXXENSPOR Ticari
+            Üye Ol</a>
+      </div>
+   </nav>
+
+   <div class="bg-dark sticky-top">
+      <nav class="container2 py-3">
+         <form class="row navform">
+            <div class="col-md-4 my-md-3 my-1">
+               <input class="form-control form-control-lg rounded-0" placeholder="Ad Soyad" type="text">
+            </div>
+            <div class="col-md-4 my-md-3 my-1">
+               <input class="form-control form-control-lg rounded-0" placeholder="Email Adresi" type="text">
+            </div>
+            <div class="col-md-4 my-md-3 my-1">
+               <button type="submit" class="btn btn-lg fw-semibold btn-warning w-100 rounded-0">Üye Ol</button>
+            </div>
+         </form>
+      </nav>
+   </div>
+   <!-- NAVBAR END -->
+
+   <!-- MAIN START -->
+   <main class="bg-black">
+      <div class="container2">
+         <img class="w-100 py-5" src="https://image.exxen.com/landing/14gun.jpg" alt="">
+         <!-- Card List -->
+         <div class="row row-cols-md-4 row-cols-2">
+            <!-- Card 1 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image1.exxen.com/content/Y/Nl/40034/Poster.jpg?v=637656647853011273" alt="">
+                  <h4 class="card-title fs-5 py-3">Şampiyonlar Ligi</h4>
+               </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image2.exxen.com/content/E/nl/40039/Poster.jpg?v=637656707497190085" alt="">
+                  <h4 class="card-title fs-5 py-3">Avrupa Ligi</h4>
+               </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image3.exxen.com/content/s/pL/40040/Poster.jpg?v=637656738136316293" alt="">
+                  <h4 class="card-title fs-5 py-3">Avrupa Konferans Ligi</h4>
+               </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image4.exxen.com/content/d/gp/34584/Poster.jpg?v=638273346422572209" alt="">
+                  <h4 class="card-title fs-5 py-3">O Ses Türkiye Rap</h4>
+               </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image5.exxen.com/content/n/lC/22377/Poster.jpg?v=638223729884524738" alt="">
+                  <h4 class="card-title fs-5 py-3">Konuşanlar</h4>
+               </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image1.exxen.com/content/0/hS/46355/Poster.jpg?v=638273414731768819" alt="">
+                  <h4 class="card-title fs-5 py-3">Sadece Arkadaşız</h4>
+               </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image2.exxen.com/content/7/TV/46350/Poster.jpg?v=638085057924964440" alt="">
+                  <h4 class="card-title fs-5 py-3">Sizi Dinlliyorum</h4>
+               </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image3.exxen.com/content/s/2O/22396/Poster.jpg?v=638217678502738349" alt="">
+                  <h4 class="card-title fs-5 py-3">Gibi</h4>
+               </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image4.exxen.com/content/9/es/39508/Poster.jpg?v=638163246197581395" alt="">
+                  <h4 class="card-title fs-5 py-3">Leyla ile Mecnun</h4>
+               </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image5.exxen.com/content/j/fv/22481/Poster.jpg?v=637726055819673373" alt="">
+                  <h4 class="card-title fs-5 py-3">Tolgshow Filtresiz</h4>
+               </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image1.exxen.com/content/Q/sE/41756/Poster.jpg?v=638273383912122360" alt="">
+                  <h4 class="card-title fs-5 py-3">Türkiye'deki Seri Katiller</h4>
+               </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="">
+               <div class="card bg-black text-light text-center">
+                  <img src="https://image2.exxen.com/content/L/-m/44282/Poster.jpg?v=638273400287146258" alt="">
+                  <h4 class="card-title fs-5 py-3">Aşk Kumardır</h4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- MAIN END -->
+
+
+   <!-- FOOTER START -->
+   <footer class="bg-black py-4">
+      <div class="container2 d-flex flex-column align-items-center">
+         <img class="my-4 w-50" src="https://wimage.exxen.com/img/landing/devices.svg" alt="">
+         <h4 class="text-light text-center fs-md-1 ">Hemen üye ol, cepte, tablette, bilgisayarda, istediğin zaman,
+            istediğin
+            yerde exxen.com, Google Play, AppGallery, App
+            Store, Apple TV ve Android TV'den izlemeye başla.</h4>
+
+         <div class="mobil-app d-flex flex-wrap justify-content-center gap-2 mt-4 mb-5">
+            <img src="https://wimage.exxen.com/img/app-store-2.svg" alt="">
+            <img src="https://wimage.exxen.com/img/google-play@3x.png" alt="">
+            <img src="https://wimage.exxen.com/img/landing/huawei-app-gallery@3x.png" alt="">
+         </div>
+
+         <div class="d-flex align-items-center justify-content-between">
+            <img class="mx-md-3 mx-1" style="height: 46px;" src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="">
+            <div class="mx-md-3 mx-1 bg-white rounded-1">
+               <img style="height: 40px;" src="https://www.svgrepo.com/show/354982/facebook.svg" alt="">
+            </div>
+            <img class="mx-md-3 mx-1" style="height: 40px;" src="https://www.svgrepo.com/show/349537/twitter.svg" alt="">
+            <img class="mx-md-3 mx-1" style="height: 40px;" src="https://www.svgrepo.com/show/349577/youtube.svg" alt="">
+         </div>
+         <div class="bg-dark text-warning p-3 w-100 my-5 text-center fw-bold fs-4">
+            Exxen Yardım Merkezi
+         </div>
+      </div>
+   </footer>
+   <!-- FOOTER END -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

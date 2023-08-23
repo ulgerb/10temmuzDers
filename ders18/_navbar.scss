@@ -1,0 +1,14 @@
+body{
+   margin: 0;
+}
+
+.navbar{
+   padding: 20px;
+   display: flex;
+   background-color: lightsteelblue;
+   a{
+      margin-left: 20px;
+      font-size: 1.5rem;
+      color: #333;
+   }
+}

@@ -1,0 +1,246 @@
+// UYGULAMA 1
+.card{
+   width: 30%;
+   display: flex;
+   padding: 1rem;
+   box-shadow: 0px 2px 4px #44444460;
+   border: 4px solid black;
+   transition: .4s all;
+   cursor: pointer;
+   &:hover{
+      transform: translate(5%);
+   }
+   .cardRight{
+      margin-left: 1.5rem;
+   }
+}
+// UYGULAMA 2
+.card2{
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 8px black;
+   .title{
+      font-size: 1.5rem;
+      color: #444;
+   }
+   .text{
+      font-size: 1.1rem;
+      color: #666;
+   }
+   .buttons{
+      display: flex;
+      justify-content: space-between;
+      .btn1,.btn2{
+         border-radius: 10px;
+         &:hover{
+            translate: 10px;
+         }
+      }
+      .btn1{
+         background-color: lightblue;
+      }
+      .btn2{
+         background-color: lightcoral;
+      }
+   }
+}
+
+
+
+$bg-color1: red;
+$box-wh: 200px;
+$box-border-px: 4px;
+$box-border-type: solid;
+$box-border-color: black;
+
+$fs-1: 2rem;
+
+.box{
+   width: $box-wh;
+   height: $box-wh;
+   background-color: $bg-color1;
+   border: $box-border-px $box-border-type $box-border-color; 
+}
+p{
+   font-size: $fs-1;
+}
+
+
+/* Çoklu yorum satırı */
+// Tekli yorum satırı
+
+// *** Nesting
+.mydiv{
+   border: 2px solid black;
+   .div1{
+      border: 2px solid black;
+      background-color: lightcoral;
+      padding: 20px;
+      a{
+         color: #faf333;
+         &:hover{
+            color: lightblue;
+         }
+      }
+      // a:hover{
+      //    color: lightblue;
+      // }
+   }
+   .div2{
+      background-color: lightblue;
+      padding: 20px;
+      h2{
+         letter-spacing: 2px;
+         font-size: 1.25rem;
+         color: red;
+      }
+      div{
+         font-weight: 800;
+         color: #444;
+      }
+   }
+}
+
+.mydiv{}
+.mydiv .div1{}
+.mydiv .div1 a{}
+.mydiv .div2{}
+
+// interpolation
+$primary: blue;
+$bg-color-text: "primary";
+.bg-#{$bg-color-text}{
+   background-color: $primary;
+}
+
+// @each
+$colors: blue, yellow, red, gray, black, white;
+
+@each $clr in $colors{ //
+   .bg-#{$clr}{
+      background-color: $clr;
+   }
+   .text-#{$clr}{
+      color: $clr;
+   }
+}
+
+// @each (each-map)
+$color-list: (
+   primary: blue,
+   warning: yellow,
+   success: green,
+   danger: red,
+);
+@each $key, $value in $color-list{
+   .bg-#{$key}{
+      background-color: $value;
+   }
+}
+
+// @extend (miras alma)
+%kutu{
+   margin: 5px;
+   width: 200px;
+   height: 200px;
+   border: 4px solid black;
+   &:hover{
+      scale: 1.1;
+   }
+}
+
+.kutu1{
+   @extend %kutu;
+   background-color: blue;
+}
+.kutu2{
+   @extend %kutu;
+   background-color: red;
+}
+.kutu3{
+   @extend %kutu;
+   background-color: green;
+}
+
+// @mixin @include (fonksyon)
+@mixin bx{
+   margin: 5px;
+   width: 200px;
+   height: 200px;
+   border: 4px solid black;
+   &:hover{
+      scale: 1.1;
+   }
+}
+.bx1{
+   @include bx;
+   background-color: blue;
+}
+.bx2{
+   @include bx;
+   background-color: red;
+}
+.bx3{
+   @include bx;
+   background-color: green;
+}
+// mixin function kullanımı
+@mixin b($w:150px, $h:150px, $bgc:#000){
+   margin: 5px;
+   width: $w;
+   height: $h;
+   border: 4px solid black;
+   background-color: $bgc;
+   &:hover {
+      scale: 1.1;
+   }
+}
+.b1{
+   @include b(100px, 100px, lightblue);
+}
+.b2{
+   @include b(150px,150px, lightcoral);
+}
+.b3{
+   @include b(200px,200px, lightgreen);
+}
+.b4{
+   @include b;
+}
+
+
+// @import
+
+@import "navbar";
+
+// matematiksel - operatör - işlemleri
+$padding: 10px;
+$margin: 10px;
+$mh: 200px;
+$border: 4px solid black;
+.content1{
+   margin: $margin;
+   min-height: $mh;
+   background-color: red;
+   h4{
+      padding: $padding ;
+      border: $border;
+   }
+   p{
+      padding: $padding;
+      border: $border;
+   }
+}
+.content2{
+   margin: $margin + 10;
+   min-height: $mh *2;
+   background-color: blue;
+   h4{
+      padding: $padding /2;
+      border: $border;
+   }
+   p{
+      padding: $padding - 10px;
+      border: $border;
+   }
+}
