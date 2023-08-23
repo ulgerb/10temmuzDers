@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Header - Navbar</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      a{
+         text-decoration: none;
+      }
+      ul{
+         list-style-type: none;
+      }
+
+      /* NAVBAR START */
+      .mynav{
+         padding: 0 50px;
+         display: flex;
+         align-items: center;
+         background-color: coral;
+         height: 60px;
+      }
+      .logo{
+         width: 50px;
+      }
+      .nav-list{
+         margin-left: 40px;
+         display: flex;
+         height: 100%;
+      }
+      .nav-list li{
+         display: flex;
+         height: 100%;
+      }
+      .nav-list li a{
+         color: #f1f1f1;
+         font-size: 20px;
+         display: flex;
+         align-items: center;
+         height: 100%;
+         padding: 0 20px;
+      }
+      .nav-list li a:hover{
+         background-color: red;
+      }
+      /* NAVBAR END */
+   </style>
+</head>
+<body>
+   <header>
+      <nav class="mynav">
+         <img class="logo" src="img/logo.png" alt="">
+         <ul class="nav-list">
+            <li><a href="#"><span>Anasayfa</span></a></li>
+            <li><a href="#"><span>Hakkında</span></a></li>
+            <li><a href="#"><span>İletişim</span></a></li>
+            <li><a href="#"><span>Profil</span></a></li>
+         </ul>
+      </nav>
+   </header>
+   
+</body>
+</html>

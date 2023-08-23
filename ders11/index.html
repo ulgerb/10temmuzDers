@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>basriberkay@gmail.com</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      .body,html{
+         overflow-x: hidden;
+         overflow-y: scroll;
+      }
+      .box1{
+         width: 300px;
+         height: 300px;
+         border: 4px solid red;
+         overflow: hidden; /* dışarı taşan yerleri gizler */
+         overflow: scroll; /* bize scroll verir */   
+
+         /* sadece y düzeleminde hareket ettirmek için iki özelliğede değer veriyoruz */
+         overflow-y: scroll; 
+         overflow-x: hidden;
+      }
+
+      .box1 img{
+         width: 100%;
+         height: 100%;
+      } 
+      
+      .b{
+         display: flex;
+         flex-wrap: wrap;
+         perspective: 1000px;
+      }
+      .kutu1{
+         margin: 20px;
+         width: 200px;
+         min-width: 200px;
+         height: 200px;
+         background-color: coral;
+         border: 4px solid black;
+         transition: all 1s;
+         transform-style: preserve-3d;
+      }
+      .kutu1:hover{
+         background-color: red;
+         transform: rotateX(20deg) rotateY(60deg);
+         transform: translate(100px, 50px);
+         transform: translateX(200px) translateY(100px);
+         transform: skewY(100deg);
+         transform: scale(1.2);
+      }
+
+
+      /* Animation */
+      .div1{}
+      .d{
+         margin-top: 10px;
+         width: 100px;
+         height: 100px;
+         background-color: dodgerblue;
+         border: 4px solid black;
+         border-right-color: red;
+      }
+      .d1:hover{
+         animation: asd 2s 1s reverse;
+         animation: asd 2s infinite alternate-reverse;
+         animation: asd 2s both;
+         
+      }
+      .d2{
+         animation: asd 2s 2s both;
+      }
+
+      @keyframes asd {
+         40%{
+            transform: rotate(45deg);
+         }
+         100%{
+            transform: translate(100px) rotate(45deg);
+            background-color: chocolate;
+         }
+      }
+
+      .d3{
+         animation: circle1 4s both;
+      }
+      @keyframes circle1 {
+         from{
+            transform: rotate(10turn);
+         }
+         to{
+            border-radius: 50%;
+         }
+      }
+     
+      .d4{
+         animation: an1 3s infinite;
+      }
+
+      @keyframes an1 {
+         25%{
+            transform: translateX(200px);
+            background-color: red;
+         }
+         50%{
+            background-color: green;
+            transform: translateX(200px) translateY(150px);
+         }
+         75%{
+            transform: translateX(0px) translateY(150px);
+            background-color: purple;
+         }
+      }
+      
+      .su-con{
+         margin-top: 200px;
+         width: 400px;
+         height: 200px;
+         border: 2px solid black;
+         border-top: 0;
+         background: linear-gradient(rgba(0, 102, 255, 0.54), rgba(0, 66, 164, 0.742), rgb(0, 32, 81));
+         position: relative;
+      }
+      .kabarcik{
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         box-shadow: 0px 0px 4px 0px #eee inset, 0px 0px 1px 0px #222;
+         animation: bom1 infinite;
+         opacity: 0;
+      }
+      .k1{ animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); animation-delay: 1s; animation-duration: 5s; position: absolute; left: 50px; top: 50px; }
+      .k2{ animation-timing-function: linear; animation-delay: 2s; animation-duration: 8s; position: absolute; left: 120px; top: 150px; }
+      .k3{ animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); animation-delay: 3s; animation-duration: 10s; position: absolute; left: 210px; top: 80px; }
+      .k4{ animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); animation-delay: 2.3s; animation-duration: 3s; position: absolute; left: 310px; top: 100px; }
+      .k5{ animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); animation-delay: 1.4s; animation-duration: 14s; position: absolute; left: 260px; top: 30px; }
+
+      @keyframes bom1 {
+         25%{
+            transform: scale(0.3);
+         }
+         50%{
+            transform: scale(1.2) translate(0px, -20px);
+         }
+         95%{
+            transform: scale(1.6) translate(0px, -100px);
+         }
+         96%{
+            transform: scale(1.6) translate(3px, -100px);
+         }
+         98%{
+            opacity: 1;
+            transform: scale(1.7) translate(0px, -103px);
+         }
+         100%{
+            opacity: 0;
+            transform: scale(1.4) translate(0px, -100px);
+         }
+      }
+
+      .tr{
+         width: 100px;
+         height: 100px;
+         background-color: brown;
+         transition: all 1s;
+      }
+      .tr:hover{
+         transform: translate(200px);
+      }
+
+      .an{
+         margin-top: 10px;
+         width: 100px;
+         height: 100px;
+         background-color: indigo;
+      }
+      .an:hover{
+         animation: an1 1s both;
+      }
+      @keyframes an1 {
+         100%{
+            transform: translate(200px);
+            opacity: 0;
+         }
+      }
+      
+      .top1-con{
+         margin-left: 100px;
+         width: 150px;
+         animation: tp 1s linear;
+      }
+      .top1{
+         width: 20px;
+         height: 20px;
+         border: 2px solid black;
+         background-color: green;
+         border-radius: 50%;
+      }
+      @keyframes tp {
+         100%{
+            rotate: 360deg;
+         }
+      }
+      
+      
+   </style>
+</head>
+<body>
+   <h2>Overflow</h2>
+   
+   <h2>ÖDEV</h2>
+   <ul>
+      <li>derece: orta</li>
+      <li>bir kutu oluşturun animasyon süresi 5saniye</li>
+      <li>önce 5 tur dönsün ve daireye dönüşsün ve o şekilde animasyona devam etsin</li>
+      <li>daireye döndükten sonra rengi kırmızı olucak ve 4 kere yukarı aşağıya hızlıca sekme hareketi yapıcak</li>
+   </ul>
+   <ul>
+      <li>derece: zor</li>
+      <li>bir kutu oluşturun ve sinüs eğrisi üzerinde hareket etmesini sağlayın</li>
+   </ul>
+   
+   <h2>Uygulamalar</h2>
+   <ul>
+      <li>su kabarcıkları oluşturun ve yukarı doğru gidip kaybolsun</li>
+   </ul>
+
+   <div class="su-con">
+      <div class="kabarcik k1"></div>
+      <div class="kabarcik k2"></div>
+      <div class="kabarcik k3"></div>
+      <div class="kabarcik k4"></div>
+      <div class="kabarcik k5"></div>
+   </div>
+   <h4>Uygulama2: bir topu daire şeklinde hareket ettirin </h4>
+   <br><br><br><br><br>
+
+   <div class="top1-con">
+      <div class="top1"></div>
+   </div>
+
+   <br><br><br><br><br>
+
+   <div class="tr"></div>
+
+   <div class="an"></div>
+   
+   <br><br><br><br><br>
+   <div class="box1">
+      <img src="bgpln.png" alt="">
+   </div>
+
+   <div class="div1">
+      <div class="d d1"></div>
+      <div class="d d2"></div>
+      <div class="d d3"></div>
+      <h4>d4 kutusu sağa 200px rengi kırmızı<br>
+         aşağıya 150px rengi yeşil <br>
+         sola 200px rengi mor <br>
+         başladığı konuma geri döner <br>
+         ve bu olayı sonsuza kadar yapıcak <br>
+         animasyn süresi 3saniye
+      </h4>
+      <div class="d d4"></div>
+   </div>
+   <br><br><br><br><br><br><br><br>
+   <div class="b">
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+      <div class="kutu1">Lorem, ipsum dolor.</div>
+   </div>
+
+   
+</body>
+</html>

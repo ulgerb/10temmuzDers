@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Div-Span</title>
+   <style>
+      .mydiv{
+         color: red;
+      }
+   </style>
+</head>
+<body>
+   <span>inline level</span>
+   <span>inline level</span>
+   <span>yazıların içerisinde, yazı altı görsellerde</span>
+   <div>block level</div>
+   <div>block level</div>
+   <div>
+      <div style="background-color: lightblue;" id="mydiv" class="mydiv">
+
+         <h4>Lorem, <span>ipsum</span> dolor.</h4>
+         <h4>Lorem, ipsum dolor.</h4>
+      </div>
+   
+      <div id="content" >
+         <div>Lorem ipsum dolor sit amet.</div>
+         <div>Lorem ipsum dolor sit amet.</div>
+      </div>
+   
+      <div>
+         <p class="mydiv" id="mydiv">Lorem ipsum dolor sit amet.</p>
+         <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+   
+      <div class="mydiv">
+         <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+         </ul>
+      </div>
+   </div>
+   
+</body>
+</html>

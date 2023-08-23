@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      
+      .mydiv{}
+      .mydiv>div:first-child{
+         border: 4px solid black;
+         padding: 10px;
+         background-color: coral;
+      }
+      .mydiv>div:first-child> div:first-child{
+         font-size: 30px;
+         color: red;
+      }
+      .mydiv>div:first-child> div:last-child{
+         font-style: italic;
+      }
+
+      .mydiv>div:nth-child(2){
+         margin: 10px;
+         padding: 10px;
+      }
+      .mydiv>div:nth-child(2)>div:nth-child(1){
+         width: 300px;
+         height: 300px;
+         background-color: darkslateblue;
+      }
+      .mydiv>div:last-child>div:last-child{
+         border: 4px solid black;
+         width: 200px;
+         height: 200px;
+      }
+      .mydiv>div:last-child>div:last-child:hover{
+         background-color: darkred;
+      }
+      
+      .mydiv>div:last-child>div:first-child>div:first-child{
+         width: 100px;
+         height: 100px;
+         background-color: chocolate;
+         animation: box1 5s infinite;
+      }
+
+      @keyframes box1 {
+         20%{ background-color: brown; }
+         40%{ background-color: darkseagreen; }
+         60%{ background-color: darkgreen; }
+         80%{ background-color: darkturquoise; }
+         100%{ background-color: greenyellow; width: 300px; height: 300px; }
+      }
+      
+   </style>
+</head>
+<body>
+
+   <div class="mydiv">
+      <div> <!-- border, padding, renk verilecek -->
+         <div>Başlık</div> <!-- font-size:30px rengi kırmızı -->
+         <div>Lorem ipsum dolor sit amet.</div> <!-- eğik yazı -->
+      </div>
+
+      <div> <!-- margin, padding -->
+         <div> <!-- renk verilecek 300e 300 boyut verilecek -->
+            <div></div> <!-- animasyon olucak boyutu 100e 100den 300e 300 genişlicek ve 5 renk değişsin -->
+         </div>
+         <div></div> <!-- border, 200e 200 boyut, hover olduğunda renk verin -->
+      </div>
+   </div>
+   
+</body>
+</html>

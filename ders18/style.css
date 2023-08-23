@@ -1,0 +1,296 @@
+@charset "UTF-8";
+.card {
+  width: 30%;
+  display: flex;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(68, 68, 68, 0.3764705882);
+  border: 4px solid black;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translate(5%);
+}
+.card .cardRight {
+  margin-left: 1.5rem;
+}
+
+.card2 {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+}
+.card2 .title {
+  font-size: 1.5rem;
+  color: #444;
+}
+.card2 .text {
+  font-size: 1.1rem;
+  color: #666;
+}
+.card2 .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.card2 .buttons .btn1, .card2 .buttons .btn2 {
+  border-radius: 10px;
+}
+.card2 .buttons .btn1:hover, .card2 .buttons .btn2:hover {
+  translate: 10px;
+}
+.card2 .buttons .btn1 {
+  background-color: lightblue;
+}
+.card2 .buttons .btn2 {
+  background-color: lightcoral;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 4px solid black;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Çoklu yorum satırı */
+.mydiv {
+  border: 2px solid black;
+}
+.mydiv .div1 {
+  border: 2px solid black;
+  background-color: lightcoral;
+  padding: 20px;
+}
+.mydiv .div1 a {
+  color: #faf333;
+}
+.mydiv .div1 a:hover {
+  color: lightblue;
+}
+.mydiv .div2 {
+  background-color: lightblue;
+  padding: 20px;
+}
+.mydiv .div2 h2 {
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  color: red;
+}
+.mydiv .div2 div {
+  font-weight: 800;
+  color: #444;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-red {
+  color: red;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.bg-warning {
+  background-color: yellow;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.kutu3, .kutu2, .kutu1 {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+}
+.kutu3:hover, .kutu2:hover, .kutu1:hover {
+  scale: 1.1;
+}
+
+.kutu1 {
+  background-color: blue;
+}
+
+.kutu2 {
+  background-color: red;
+}
+
+.kutu3 {
+  background-color: green;
+}
+
+.bx1 {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  background-color: blue;
+}
+.bx1:hover {
+  scale: 1.1;
+}
+
+.bx2 {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  background-color: red;
+}
+.bx2:hover {
+  scale: 1.1;
+}
+
+.bx3 {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  background-color: green;
+}
+.bx3:hover {
+  scale: 1.1;
+}
+
+.b1 {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: 4px solid black;
+  background-color: lightblue;
+}
+.b1:hover {
+  scale: 1.1;
+}
+
+.b2 {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  background-color: lightcoral;
+}
+.b2:hover {
+  scale: calc(1 + 0.1);
+}
+
+.b3 {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  background-color: lightgreen;
+}
+.b3:hover {
+  scale: 1.1;
+}
+
+.b4 {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  background-color: #000;
+}
+.b4:hover {
+  scale: 1.1;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  background-color: lightsteelblue;
+}
+.navbar a {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.content1 {
+  margin: 10px;
+  min-height: 200px;
+  background-color: red;
+}
+.content1 h4 {
+  padding: 10px;
+  border: 4px solid black;
+}
+.content1 p {
+  padding: 10px;
+  border: 4px solid black;
+}
+
+.content2 {
+  margin: 20px;
+  min-height: 400px;
+  background-color: blue;
+}
+.content2 h4 {
+  padding: 5px;
+  border: 4px solid black;
+}
+.content2 p {
+  padding: 0px;
+  border: 4px solid black;
+}/*# sourceMappingURL=style.css.map */
